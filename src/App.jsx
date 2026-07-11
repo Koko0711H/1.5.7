@@ -319,11 +319,11 @@ function Navbar({ progress }) {
     <div className={"navbar" + (scrolled ? " scrolled" : "")}>
       <img className="nav-logo" src="/logo.png" alt="Shenchai" />
       <div className="nav-links">
-        <a href="#">{t("navHome")}</a>
-        <a href="#">{t("navProducts")}</a>
-        <a href="#">{t("navAbout")}</a>
-        <a href="#">{t("navCases")}</a>
-        <a href="#">{t("navService")}</a>
+        <a href="https://shenchaidongli.pages.dev/">{t("navHome")}</a>
+        <a href="https://shenchaidongli.pages.dev/#products">{t("navProducts")}</a>
+        <a href="https://shenchaidongli.pages.dev/#about">{t("navAbout")}</a>
+        <a href="https://shenchaidongli.pages.dev/#cases">{t("navCases")}</a>
+        <a href="https://shenchaidongli.pages.dev/#contact">{t("navService")}</a>
       </div>
       <div className="lang-btns">
         <button className={"lang-btn" + (lang === "zh" ? " active" : "")} onClick={() => setLang("zh")}>中文</button>
