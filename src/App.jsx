@@ -422,7 +422,7 @@ function Navbar() {
   return (
     <header className="navbar">
       <div className="navbar-inner">
-      <a className="nav-logo-link" href={withLanguage("https://shenchaidongli.pages.dev/", lang)} aria-label={lang === "zh" ? "深柴动力首页" : "ShenChai Power home"}><img className="nav-logo" src="/logo.png" alt="FlyDeer 深柴动力" /></a>
+      <a className="nav-logo-link" href={withLanguage("https://shenchaidongli.pages.dev/", lang)} aria-label={lang === "zh" ? "深柴动力首页" : "FLYDEER POWER home"}><img className="nav-logo" src="/logo.png" alt="FLYDEER POWER 深柴动力" /></a>
       <nav className="nav-links">
         <a href={withLanguage("https://shenchaidongli.pages.dev/", lang)}>{t("navHome")}</a>
         <a className="active" aria-current="page" href={withLanguage("https://shenchaidongli.pages.dev/#products", lang)}>{t("navProducts")}</a>
@@ -509,7 +509,7 @@ function InquiryFooter({ visible }) {
   return (
     <section className={"inquiry-footer" + (visible ? " is-visible" : "")} aria-hidden={!visible}>
       <div className="inquiry-footer-inner">
-        <p className="inquiry-brand">SHENCHAI POWER</p>
+        <p className="inquiry-brand">FLYDEER POWER</p>
         <h2>{zh ? "为您的项目，匹配可靠动力方案。" : "Reliable power, configured for your project."}</h2>
         <p className="inquiry-copy">
           {zh
@@ -526,8 +526,8 @@ function InquiryFooter({ visible }) {
         </div>
       </div>
       <footer className="inquiry-site-footer">
-        <span>© 2026 SHENCHAI POWER</span>
-        <span>{zh ? "深柴动力 · 可靠动力解决方案" : "Shenchai Power · Reliable Power Solutions"}</span>
+        <span>© 2026 FLYDEER POWER</span>
+        <span>{zh ? "深柴动力 · 可靠动力解决方案" : "FLYDEER POWER · Reliable Power Solutions"}</span>
         <a href={withLanguage("https://shenchaidongli.pages.dev/", lang)} tabIndex={visible ? 0 : -1}>
           {zh ? "返回主站 ↑" : "Main Site ↑"}
         </a>
@@ -637,6 +637,9 @@ function LanguageProvider({ children }) {
 
   useEffect(() => {
     syncLanguageToUrl(lang);
+    document.title = lang === "zh"
+      ? "深柴动力｜3D 产品展厅"
+      : "FLYDEER POWER | 3D Product Showroom";
   }, [lang]);
 
   const t = useCallback((key) => T[lang][key] || key, [lang]);
