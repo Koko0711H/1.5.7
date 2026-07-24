@@ -53,8 +53,8 @@ export const PRODUCT = {
       sub_chassis: "强化底盘 · IP55 防护",
     },
     en: {
-      navHome: "Home", navProducts: "Products", navAbout: "About",
-      navCases: "Projects", navService: "Service & Sales", scroll: "SCROLL",
+      navHome: "Home", navProducts: "Products", navAbout: "About Us",
+      navCases: "Projects", navService: "Sales & Service", scroll: "SCROLL",
       homeTitle: "Silent Generator Set",
       homeIntro1: "Shenchai Power is a comprehensive enterprise integrating R&D, production, sales and service of diesel generator sets. With a modern manufacturing base, annual capacity exceeds 5,000 units.",
       homeIntro2: "Backed by state-owned strength combined with market-oriented innovation, Shenchai Power has become a leading diesel generator set manufacturer in China.",

@@ -421,12 +421,12 @@ function Navbar() {
   return (
     <header className="navbar">
       <div className="navbar-inner">
-      <a className="nav-logo-link" href="https://shenchaidongli.pages.dev/"><img className="nav-logo" src="/logo.png" alt="FlyDeer 深柴动力" /></a>
+      <a className="nav-logo-link" href="https://shenchaidongli.pages.dev/" aria-label={lang === "zh" ? "深柴动力首页" : "ShenChai Power home"}><img className="nav-logo" src="/logo.png" alt="FlyDeer 深柴动力" /></a>
       <nav className="nav-links">
         <a href="https://shenchaidongli.pages.dev/">{t("navHome")}</a>
-        <a href="https://shenchaidongli.pages.dev/#products">{t("navProducts")}</a>
-        <a href="https://shenchai1-5-3.pages.dev/">{lang === "zh" ? "网上展厅" : "Showroom"}</a>
-        <a href="https://shenchaidongli.pages.dev/#about">{t("navAbout")}</a>
+        <a className="active" aria-current="page" href="https://shenchaidongli.pages.dev/#products">{t("navProducts")}</a>
+        <a href="https://shenchai1-5-3.pages.dev/">{lang === "zh" ? "网上展厅" : "Online Showroom"}</a>
+        <a href="https://3-0-1.pages.dev/">{t("navAbout")}</a>
         <a href="https://shenchaidongli.pages.dev/#cases">{t("navCases")}</a>
         <a href="https://shenchaidongli.pages.dev/#contact">{t("navService")}</a>
       </nav>
